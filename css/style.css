@@ -1,0 +1,342 @@
+    a {
+        text-decoration: none;
+    }
+
+    a:visited,
+    a:link {
+        color: #fff;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    a,
+    p,
+    h1,
+    figcaption {
+        font-family: 'Amatic SC', cursive;
+    }
+
+    a,
+    figcaption {
+        font-size: 1.5em;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+    }
+
+    h1,
+    p {
+        font-size: 3.2em;
+    }
+    /* HEADER SECTION */
+
+    header {
+        display: flex;
+        justify-content: center;
+        height: 90px;
+        width: 1150px;
+        margin: 0 auto;
+        background-color: rgba(185, 131, 131, 0.1);
+    }
+
+    header nav {
+        flex: 1 0 auto;
+        align-self: center;
+    }
+
+    header>nav>ul {
+        display: table;
+        padding: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    header>nav>ul>li {
+        list-style: none;
+        float: left;
+        margin: 0 15px;
+        padding: 10px 30px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 30px;
+        background-color: rgba(163, 87, 87, 0.7);
+    }
+
+    header>nav>ul>li:first-child {
+        margin: 0 15px 0 0;
+        padding: 10px 30px 10px 130px;
+    }
+
+    header>nav>ul>li:last-child {
+        margin: 0 0 0 15px;
+        padding: 10px 130px 10px 30px;
+    }
+
+    header>nav>input {
+        float: right;
+    }
+    /* END OF HEADER SECTION */
+    /*SECTION WITH CLOCK AND GALLERY*/
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        align-items: baseline;
+        margin: 0 auto;
+        padding: 50px;
+        width: 1100px;
+        background-image: url(../images/bg.png);
+        background-repeat: no-repeat;
+        background-position-y: 160%;
+        background-position-x: 2%;
+        background-size: 51%;
+    }
+
+    .clock {
+        width: 101px;
+        height: 101px;
+        border: 1px solid rgb(248, 242, 242);
+        background: #fff;
+        border-radius: 50%;
+        transform: rotate(180deg) scale(2.5);
+        align-self: center;
+        margin-left: 120px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+        width: 400px;
+    }
+
+    .clock .hours {
+        border: 3px solid black;
+        position: absolute;
+        height: 32%;
+        border-radius: 3px;
+        left: 48px;
+        top: 50px;
+        animation-duration: 43200s;
+    }
+
+    .clock .minutes {
+        border: 1px solid black;
+        position: absolute;
+        border-radius: 2px;
+        top: 50px;
+        left: 50px;
+        height: 45%;
+        animation-duration: 3600s;
+    }
+
+    .clock .seconds {
+        border: 1px solid rgba(163, 87, 87, 0.7);
+        position: absolute;
+        border-radius: 2px;
+        top: 50px;
+        left: 50px;
+        height: 45%;
+        animation-duration: 60s;
+    }
+
+    .animate {
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .hand {
+        transform-origin: top center;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate (0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .photo {
+        width: 200px;
+        background: white;
+        padding: 10px;
+        opacity: 0.7;
+        border-radius: 5px;
+        border: 1px solid silver;
+        box-sizing: border-box;
+        margin: 0 auto;
+        text-align: center;
+        transform: rotate(5deg);
+        transition: 0.3s all ease-in-out;
+    }
+
+    .photo img {
+        flex-basis: 100%;
+        width: 170px;
+    }
+
+    .photo figcaption {
+        margin-top: 10px;
+    }
+
+    .photo:nth-child(2) {
+        transform: rotate(-2deg) scale(1);
+    }
+
+    .photo:nth-child(3) {
+        transform: rotate(-3deg) scale(1);
+    }
+
+    .photo:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    /* END OF CLOCK AND GALLERY SECTION */
+    /* TIMER SECTION */
+
+    .countDown {
+        text-align: center;
+        margin: 30px 0 50px;
+    }
+
+    .countDown>h1 {
+        line-height: 1px;
+    }
+
+    #timer {
+        width: 400px;
+        height: 130px;
+        margin: 0 auto;
+        background: rgba(246, 223, 255, 0.8);
+        padding: 25px 0 25px;
+        opacity: 0.7;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    /* END OF TIMER SECTION */
+    /* STATISTICS SECTION */
+
+    .statistics {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 900px;
+    }
+
+    .statistics div {
+        margin: 10px 0 10px;
+        border: 1px solid silver;
+        border-radius: 30px;
+    }
+
+    .statistics p {
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        font-size: 2.5em;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        text-align: right;
+        padding: 0 30px;
+        margin: 0;
+    }
+
+    .firstAni {
+        animation-name: animation;
+    }
+
+    @keyframes animation {
+        0% {
+            background-color: white;
+            width: 100px;
+        }
+        25% {
+            background-color: #feccba;
+            width: 210px;
+        }
+        50% {
+            background-color: #FEC8BB;
+            width: 320px;
+        }
+        75% {
+            background-color: #FEC0BB;
+            width: 430px;
+        }
+        100% {
+            background-color: #FEBBBB;
+            width: 540px;
+        }
+    }
+
+    .secAni {
+        animation-name: animation2;
+    }
+
+    @keyframes animation2 {
+        0% {
+            background-color: white;
+            width: 50px;
+        }
+        25% {
+            background-color: #fbb4c7;
+            width: 100px;
+        }
+        50% {
+            background-color: #FBB4DE;
+            width: 150px;
+        }
+        75% {
+            background-color: #FAA7D9;
+            width: 200px;
+        }
+        100% {
+            background-color: #FA9AE7;
+            width: 270px;
+        }
+    }
+
+    .thirdAni {
+        animation-name: animation3;
+    }
+
+    @keyframes animation3 {
+        0% {
+            background-color: white;
+            width: 300px;
+        }
+        25% {
+            background-color: #BAFEBB;
+            width: 400px;
+        }
+        50% {
+            background-color: #AAF1A9;
+            width: 500px;
+        }
+        75% {
+            background-color: #9AF099;
+            width: 600px;
+        }
+        100% {
+            background-color: rgba(138, 240, 136, 0.8);
+            width: 720px;
+        }
+    }
+    /* END OF STATISTICS SECTION */
