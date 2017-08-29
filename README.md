@@ -3,7 +3,7 @@ Przykładowa strona z wykorzystaniem JavaScriptu
 
 Krótki opis 
 -------------------
-Strona została wykonana przeze mnie w sierpniu tego roku (2017). Jest to moja pierwsza strona, na której wykorzystuję czysty kod JavaScript napisany całkowicie przeze mnie.
+Strona została wykonana przeze mnie w sierpniu tego roku (2017). Jest to moja pierwsza strona, na której wykorzystuję czysty kod JavaScript napisany przeze mnie.
 
 Użyte technologie 
 --------------------
@@ -17,8 +17,8 @@ Użyte technologie
 
 Strona została testowana na poniższych przeglądarkach:
 -------------------
-    **a)**  Firefox (version 55.0.3),
-    **b)**  Google Chrome (version 60.0.3112.113).
+- Firefox (version 55.0.3),
+- Google Chrome (version 60.0.3112.113).
 
 --------------------
 ##### Projekt oraz wykonanie: Katarzyna Król
